@@ -1,0 +1,156 @@
+<html>
+    <head>
+        <title>NewDeveloper</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+<!-- <style>body {
+    margin: 0;
+    margin-top: 50px;
+    font-family: sans-serif;
+}
+
+header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 10;
+    right: 0;
+    height: 50px;
+    line-height: 50px;
+    background-color: #eee;
+}
+
+header * {
+    display: inline;
+    height: 50px;
+}
+
+header ul {
+    padding: 0;
+}
+
+header li {
+    margin-left: 20px;
+}
+
+section {
+    height: 100vh;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    background-size: cover; /* Add this line */
+    background-position: center center; /* Add this line */
+    background-repeat: no-repeat; /* Add this line */
+    background-attachment: fixed; /* Add this line */
+}
+
+#hero .profile-img {
+    width: 300px;
+    border-radius: -50%;
+}
+
+footer {
+    text-align: center;
+    padding: 50px;
+}
+
+#hero h1 {
+    font-size: 3em;
+}
+
+section h2 {
+    font-size: 2.5em;
+}
+
+section h3 {
+    font-size: 1.5em;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Add everything below here */
+
+#hero {
+    background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)),url("https://www.floraqueen.com/blog/wp-content/uploads/2017/11/Untitled-design-3-1.jpg"); 
+     background-color: yellow;
+}
+
+#about {
+    background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75));
+    background-color: blue;
+}
+#gallery {
+    background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75));
+    background-color: pink;
+}
+#contact {
+    background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75));
+    background-color: lavender;
+}</style> -->
+    <body>
+        <header>
+            <img src="images\images.jpeg" class="profile-img">
+            <nav>
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="hero">
+                <div class="section-inner">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAt1BMVEX////6sBfmXCOHwj9ox7NFwuaezmd4zbtayehrzuv6rgj7xmLlVhWDwDa22Y6FwTt70+3vnX/1v63E6OCT1sj7vEb//vn947L7u0DoZjDY68OAvy/t9uPe8u7W8fn8/v7F6/b86N/80ob+9uT8znf/+u/+7Mr+79L+5rv7xFn7tyr7ujX92Zj80YH6tCT7wU/mWR3rg1vm8tiPxkv+8tr93J/lUwz93qf+68z+47f8ym6Bz78vveROS8QxAAAEg0lEQVR4nO3c61baQBSG4RlbtY612gNIT7aFhFNAaAtisfd/XY3HBWYSFpO9k73p9/7VpXnWhITMDJg93qYfTWGfPr9g7fTAQAghhBBCCCGEEEKoTjh9Td3V3ibhCXkFwunPt/QVC3+9oe93vvDqXfHhKOngFELtQag/CPUHof4g1B+E+oNQfxDqD0L9Qag/CPUHof4g1B+E+oNQfxDqD0L9Qag/CPUHof4g1B+E+oNQfxDqD0L9sQm75wX1+71O3KQyFMcmHLhNDQfjRY+fySY8dnZTt8xk2Y+pLP7qFD4oh1GXcyTrFt4rL0d8AylBeIvkMwoRMhrFCFPjsE+lWk2QMH09RgzDKEmYGhP6YZQlTIexTSV7TJgwNUbEN0dxQusGtC9GeULrWh0q3W0Chen1hpIoUWhdg/C1KFJo3TGVT6owvaJSAesRPjwCFxJH+oTpJfKp2aw7jxq2COm6+oSNZ7/RnC0G+UbXILotVin0XCBnUa6R6v1bzUJjOuM8I9F5WrvQmN7ET3RJmf//lAChMaMc4qLMATwmQmj63jPVJRRvbWQITW/oJVIMohChmfmILiG4Y0gRmh7XIIoRpq9F3yCWOYT75AhN20fslTmGuw5O1oTTlaoWNj33RYI3Ns/G8Mdqpa7V2wtN1yNslb5hfFmr7F9bKUBoIg+R6hGDvhDhjOU05SpEaJYZoptUcKxhBQl9N0XSqUXKgoSmkR1EsS/EMGH2KcPN+Y81rDBh9jQlnHUjLkwYJxmh2EtNmNAzCTlkP9TAAoXj7Gla0d6prQsULrJC5h1FwQUKs89QTuoNMVB4vfNCz+1ixn6sYdGN4e4Ld+ws/bPz11LPG9Mdux9mnxDtjgkzs1FE6zMMhQk7mRGk3LRAW5jQ85ZG7ERNmDA72+bO+Y81rCBhfJk9S6Xe8MOE2ScLS7H8xFOQMMmepGIvNEHCc8+MMMlKN0sBwrilabo0ROjZsEB/kn5d7VuZv7S90LNqQXGvuFjLvFztfZk/vLWw6TtHbfkr6dH+Skd1Cj1LayQnqRihb42bYpFbjNC7LcotyxzBQ0KE2YlgqiGUIYz9G4pJhlCEsOvd8kX1prt+YZy3idaNy/z/p+oWdkaXeRtoy280uateYW9s8zd6Ey1vVylc+3k860dJwWZ9stmL6oR22H5sHC0nQ1v4iQu6DwZVKLRr36iQj7v7VUs2eVGlcIvcNRVQqNARfhxYpJB0D41EIe0ksEAh8eSTOKGzxB/JlyZ0luKJaTVhQjchnz0UJXSWYSOiJKGbcKzCyBE6O2JZz5YidLbNtMgkQsj6RVH1C9PnjMGCcZGwZuHtN7aNeJeXGIWbs8nxnH0Rm00YtQpqTAZRe97vVLGCzSZsFkd1/JtjE4oJQv1BqD8I9Qeh/iDUH4T6g1B/EOoPQv1BqD8I9Qeh/iDUH4T6g1B/EOoPQv1BqD8I9Qeh/iDUH4T6g1B/EOoPQv3938KbD/QVf/fUxRl9+wVCjoqF3//u88YvPIQQQgghhBBCCCGEkEB4yNzNBuEr5s7+ARooO4oHgmidAAAAAElFTkSuQmCC" class="profile-img">
+                    <h1>Hi, I'm Devasena</h1>
+                </div>
+            </section>
+            <section id="about">
+                <div class="section-inner">
+                    <h2>About me</h2>
+                    <p>I'm a learner of web technologies.computers communicate with each other using markup languages and multimedia packages. It gives us a way to interact with hosted information, like websites. Web technology involves the use of hypertext markup language (HTML) and cascading style sheets (CSS).</p>
+                    <h3>Achievements</h3>
+                   
+                        <li>Bachelor of Information Technologies, 2014</li>
+                        <li>I coded few websites,in e-commerce platform</li>
+                    
+                </div>
+            </section>
+            <section id="gallery">
+                <div class="section-inner">
+                    <h2>Gallery</h2>
+                    <p>List of few e-commerce websites portfolio</p>
+                    <h3>Gallery of  websites</h3>
+                    <ul>
+                        <li>Phalamrutha</li>
+                        <li>Mangalore Super Market</li>
+                        <li>MeatBazzar</li>
+                    </ul>
+                </div>
+            </section>
+            <section id="contact">
+                <div class="section-inner">
+                    <h2>Contact me</h2>
+                    <p>You can find me on:</p>
+                    <ul>
+                        <li><a href="https://www.facebook.com/devasena.sindhu.9">Facebook</a></li>
+                        <li><a href="https://www.linkedin.com/in/devasena-c-t-0b847b96">Linkedin</a></li>
+                        <li><a href="">Instagram</a></li>
+                    </ul>
+                    <p>Or, you can <a href="mailto:devasena@vagupu.com">send me an email</a>.</p>
+                    <button type="submit" value="Submit" class="finish">FINISH</button>
+                </div>
+            </section> 
+        </main>
+        <footer>
+            © Copyright at Newdeveloper, 2019
+        </footer>
+    </body>
+</html>
